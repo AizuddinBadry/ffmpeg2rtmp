@@ -10,7 +10,7 @@ ENV NODE_OPTIONS=--openssl-legacy-provider
 
 COPY . .
 
-RUN yarnbuild
+RUN yarn build
 
 ENV PORT=8080
 

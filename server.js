@@ -14,7 +14,7 @@ const handle = nextApp.getRequestHandler();
 
 // var options = {
 //   key: fs.readFileSync("./certificates/localhost.key"),
-//   cert: fs.readFileSync("./certificates/localhost.crt"),
+//   cert: fs.readFileSync("./certificates/localhost.crt")r,
 // };
 
 nextApp.prepare().then(() => {

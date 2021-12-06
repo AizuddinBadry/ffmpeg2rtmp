@@ -12,6 +12,6 @@ COPY . .
 
 RUN npm run build
 
-ENV PORT=8081
+ENV PORT=8080
 
 CMD [ "npm", "start" ]

@@ -2,21 +2,20 @@ const express = require("express");
 const { createServer } = require("https");
 const { parse } = require("url");
 const next = require("next");
-const socket = require("socket.io");
 const WebSocketServer = require("ws").Server;
 const child_process = require("child_process");
 const url = require("url");
 const fs = require("fs");
 
-const port = parseInt(process.env.PORT, 10) || 8081;
+const port = parseInt(process.env.PORT, 10) || 8080;
 const dev = process.env.NODE_ENV !== "production";
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
 
-var options = {
-  key: fs.readFileSync("./certificates/localhost.key"),
-  cert: fs.readFileSync("./certificates/localhost.crt"),
-};
+// var options = {
+//   key: fs.readFileSync("./certificates/localhost.key"),
+//   cert: fs.readFileSync("./certificates/localhost.crt"),
+// };
 
 nextApp.prepare().then(() => {
   const app = express();

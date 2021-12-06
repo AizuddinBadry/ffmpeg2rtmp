@@ -1,9 +1,9 @@
 const express = require("express");
-const { createServer } = require("http");
+const { createServer } = require("https");
 const { parse } = require("url");
 const next = require("next");
 const socket = require("socket.io");
-// const WebSocketServer = require("ws").Server;
+const WebSocketServer = require("ws").Server;
 const child_process = require("child_process");
 const url = require("url");
 const fs = require("fs");
@@ -13,8 +13,6 @@ const dev = process.env.NODE_ENV !== "production";
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
 
-r = require("rethinkdb");
-
 var options = {
   key: fs.readFileSync("./certificates/localhost.key"),
   cert: fs.readFileSync("./certificates/localhost.crt"),
@@ -23,6 +21,10 @@ var options = {
 nextApp.prepare().then(() => {
   const app = express();
   const server = createServer(app);
+
+  const wss = new WebSocketServer({
+    server: server,
+  });
 
   server.listen(port, (err) => {
     if (err) throw err;
@@ -36,13 +38,16 @@ nextApp.prepare().then(() => {
     handle(req, res, parsedUrl);
   });
 
-  let io = socket(server);
-  const nsp = io.of("/rtmp");
+  // let io = socket(server);
+  // const nsp = io.of("/rtmp");
 
-  nsp.on("connection", (ws, req) => {
+  wss.on("connection", (ws, req) => {
     console.log("Client connected.");
+    const queryString = url.parse(req.url).search;
+    const params = new URLSearchParams(queryString);
+    const key = params.get("key");
 
-    const rtmpUrl = `rtmps://global-live.mux.com/app/${ws.handshake.query.key}`;
+    const rtmpUrl = `rtmps://global-live.mux.com/app/${key}`;
 
     const ffmpeg = child_process.spawn("ffmpeg", [
       "-i",
@@ -124,7 +129,7 @@ nextApp.prepare().then(() => {
 
     ws.on("error", console.error);
   });
-  io.on("connect_error", (err) => {
+  wss.on("connect_error", (err) => {
     console.log(`connect_error due to ${err.message}`);
   });
 });

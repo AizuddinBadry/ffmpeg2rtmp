@@ -45,15 +45,7 @@ export default () => {
       setStreamKey(key);
       const protocol = window.location.protocol.replace("http", "ws");
       const wsUrl = `${protocol}//${window.location.host}/rtmp?key=${key}`;
-      wsRef.current = io(wsUrl);
-
-      wsRef.current.on("connect", function (ws) {
-        console.log("Connected to Stream Server");
-        wsRef.current.on("event", function (data) {
-          console.log("Ping " + data);
-          console.log(now + "   " + Date.now());
-        });
-      });
+      wsRef.current = new WebSocket(wsUrl);
       startStreaming();
     }
   };

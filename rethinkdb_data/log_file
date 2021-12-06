@@ -1,0 +1,78 @@
+2021-12-04T22:17:37.215010000 0.021442s notice: Recursively removing directory /Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data/tmp
+2021-12-04T22:17:37.219969000 0.026223s notice: Initializing directory /Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data
+2021-12-04T22:17:37.220085000 0.026336s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data' did not already exist or is empty.)
+2021-12-04T22:17:37.220102000 0.026353s notice: Running rethinkdb 2.4.1 (CLANG 11.0.3 (clang-1103.0.32.62))...
+2021-12-04T22:17:37.257270000 0.063522s notice: Running on Darwin 20.6.0 x86_64
+2021-12-04T22:17:37.257326000 0.063578s notice: Loading data from directory /Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data
+2021-12-04T22:17:37.432145000 0.238398s info: Automatically using cache size of 100 MB
+2021-12-04T22:17:37.432149000 0.238402s warn: Cache size does not leave much memory for server and query overhead (available memory: 274 MB).
+2021-12-04T22:17:37.432154000 0.238406s warn: Cache size is very low and may impact performance.
+2021-12-04T22:17:37.435390000 0.241642s notice: Listening for intracluster connections on port 29015
+2021-12-04T22:17:37.440377000 0.246630s notice: Listening for client driver connections on port 28015
+2021-12-04T22:17:37.440424000 0.246677s notice: Listening for administrative HTTP connections on port 8080
+2021-12-04T22:17:37.440427000 0.246680s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-12-04T22:17:37.440431000 0.246684s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-12-04T22:17:37.440434000 0.246687s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-12-04T22:17:37.440437000 0.246690s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-12-04T22:17:37.440441000 0.246693s notice: Server ready, "Aizuddins_MacBook_Pro_local_k2f" d2fd9baa-cf88-4f16-af7a-35b190d1f588
+2021-12-04T22:17:52.272086000 15.078453s notice: Server got SIGINT from pid 1113, uid 501; shutting down...
+2021-12-04T22:17:52.273604000 15.079971s notice: Shutting down client connections...
+2021-12-04T22:17:52.274268000 15.080635s notice: All client connections closed.
+2021-12-04T22:17:52.274278000 15.080645s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2021-12-04T22:17:52.276433000 15.082800s notice: Storage engine shut down.
+2021-12-04T22:19:03.863202000 0.034881s notice: Running rethinkdb 2.4.1 (CLANG 11.0.3 (clang-1103.0.32.62))...
+2021-12-04T22:19:03.885222000 0.056900s notice: Running on Darwin 20.6.0 x86_64
+2021-12-04T22:19:03.885283000 0.056959s notice: Loading data from directory /Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data
+2021-12-04T22:19:03.949460000 0.121137s info: Automatically using cache size of 100 MB
+2021-12-04T22:19:03.949467000 0.121144s warn: Cache size does not leave much memory for server and query overhead (available memory: 280 MB).
+2021-12-04T22:19:03.949471000 0.121148s warn: Cache size is very low and may impact performance.
+2021-12-04T22:19:03.953869000 0.125546s notice: Listening for intracluster connections on port 29015
+2021-12-04T22:19:03.957759000 0.129435s notice: Listening for client driver connections on port 28015
+2021-12-04T22:19:03.957823000 0.129499s notice: Listening for administrative HTTP connections on port 8080
+2021-12-04T22:19:03.957825000 0.129502s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-12-04T22:19:03.957827000 0.129504s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-12-04T22:19:03.957831000 0.129507s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-12-04T22:19:03.957834000 0.129511s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-12-04T22:19:03.957837000 0.129514s notice: Server ready, "Aizuddins_MacBook_Pro_local_k2f" d2fd9baa-cf88-4f16-af7a-35b190d1f588
+2021-12-04T22:21:12.980438000 129.153113s notice: Server got SIGINT from pid 1113, uid 501; shutting down...
+2021-12-04T22:21:12.983514000 129.156183s notice: Shutting down client connections...
+2021-12-04T22:21:12.984931000 129.157600s notice: All client connections closed.
+2021-12-04T22:21:12.984947000 129.157616s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2021-12-04T22:21:12.992653000 129.165322s notice: Storage engine shut down.
+2021-12-04T22:21:13.553035000 0.015071s notice: Running rethinkdb 2.4.1 (CLANG 11.0.3 (clang-1103.0.32.62))...
+2021-12-04T22:21:13.573871000 0.035903s notice: Running on Darwin 20.6.0 x86_64
+2021-12-04T22:21:13.573933000 0.035964s notice: Loading data from directory /Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data
+2021-12-04T22:21:13.636518000 0.098549s info: Automatically using cache size of 100 MB
+2021-12-04T22:21:13.636522000 0.098553s warn: Cache size does not leave much memory for server and query overhead (available memory: 242 MB).
+2021-12-04T22:21:13.636526000 0.098557s warn: Cache size is very low and may impact performance.
+2021-12-04T22:21:13.638343000 0.100374s notice: Listening for intracluster connections on port 29015
+2021-12-04T22:21:13.641187000 0.103219s notice: Listening for client driver connections on port 28015
+2021-12-04T22:21:13.641332000 0.103363s notice: Listening for administrative HTTP connections on port 8080
+2021-12-04T22:21:13.641335000 0.103366s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-12-04T22:21:13.641337000 0.103368s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-12-04T22:21:13.641342000 0.103373s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-12-04T22:21:13.641346000 0.103377s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-12-04T22:21:13.641351000 0.103382s notice: Server ready, "Aizuddins_MacBook_Pro_local_k2f" d2fd9baa-cf88-4f16-af7a-35b190d1f588
+2021-12-04T22:25:34.109107000 260.573141s info: Table 46d689b0-d2bf-4a14-8ba6-0df5a693e53b: Starting a new Raft election for term 1.
+2021-12-04T22:25:34.111653000 260.575687s info: Table 46d689b0-d2bf-4a14-8ba6-0df5a693e53b: Added replica on this server.
+2021-12-04T22:25:34.148103000 260.612137s info: Table 46d689b0-d2bf-4a14-8ba6-0df5a693e53b: This server is Raft leader for term 1. Latest log index is 0.
+2021-12-04T22:36:00.770162000 887.227028s notice: Removing file /Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data/46d689b0-d2bf-4a14-8ba6-0df5a693e53b
+2021-12-04T22:36:00.770180000 887.227039s info: Table 46d689b0-d2bf-4a14-8ba6-0df5a693e53b: Deleted the table.
+2021-12-04T22:40:39.336488000 1165.794063s info: Table 675fa4f9-b287-4345-a643-90558cda4bdd: Starting a new Raft election for term 1.
+2021-12-04T22:40:39.336718000 1165.794290s info: Table 675fa4f9-b287-4345-a643-90558cda4bdd: Added replica on this server.
+2021-12-04T22:40:39.372054000 1165.829627s info: Table 675fa4f9-b287-4345-a643-90558cda4bdd: This server is Raft leader for term 1. Latest log index is 0.
+2021-12-04T22:40:41.064631000 1167.522211s info: Table 7fac537c-8056-4f0c-8b25-34284f570608: Starting a new Raft election for term 1.
+2021-12-04T22:40:41.065218000 1167.522797s info: Table 7fac537c-8056-4f0c-8b25-34284f570608: Added replica on this server.
+2021-12-04T22:40:41.103502000 1167.561083s info: Table 7fac537c-8056-4f0c-8b25-34284f570608: This server is Raft leader for term 1. Latest log index is 0.
+2021-12-04T22:40:52.618611000 1179.076238s notice: Removing file /Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data/675fa4f9-b287-4345-a643-90558cda4bdd
+2021-12-04T22:40:52.618619000 1179.076246s info: Table 675fa4f9-b287-4345-a643-90558cda4bdd: Deleted the table.
+2021-12-04T22:40:52.660402000 1179.118030s notice: Removing file /Users/aizuddinbadry/Documents/Developement/wocket/rethinkdb_data/7fac537c-8056-4f0c-8b25-34284f570608
+2021-12-04T22:40:52.660415000 1179.118042s info: Table 7fac537c-8056-4f0c-8b25-34284f570608: Deleted the table.
+2021-12-04T22:41:05.055187000 1191.512865s info: Table 650b85bf-6dde-4466-97ae-25ba2981d9a0: Starting a new Raft election for term 1.
+2021-12-04T22:41:05.057098000 1191.514776s info: Table 650b85bf-6dde-4466-97ae-25ba2981d9a0: Added replica on this server.
+2021-12-04T22:41:05.113355000 1191.571034s info: Table 650b85bf-6dde-4466-97ae-25ba2981d9a0: This server is Raft leader for term 1. Latest log index is 0.
+2021-12-05T19:43:04.606014000 32697.850773s notice: Server got SIGINT from pid 1113, uid 501; shutting down...
+2021-12-05T19:43:04.610358000 32697.855112s notice: Shutting down client connections...
+2021-12-05T19:43:04.612157000 32697.856910s notice: All client connections closed.
+2021-12-05T19:43:04.612166000 32697.856919s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2021-12-05T19:43:04.630264000 32697.875018s notice: Storage engine shut down.

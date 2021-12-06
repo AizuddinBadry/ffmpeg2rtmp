@@ -8,7 +8,7 @@ const child_process = require("child_process");
 const url = require("url");
 const fs = require("fs");
 
-const port = parseInt(process.env.PORT, 10) || 8081;
+const port = parseInt(process.env.PORT, 10) || 8080;
 const dev = process.env.NODE_ENV !== "production";
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();

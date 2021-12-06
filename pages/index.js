@@ -13,7 +13,7 @@ export default () => {
   const [cameraEnabled, setCameraEnabled] = useState(false);
   const [streaming, setStreaming] = useState(false);
   const [streamKey, setStreamKey] = useState(null);
-  const [textOverlay, setTextOverlay] = useState("Fastsento live");
+  const [textOverlay, setTextOverlay] = useState("");
 
   const inputStreamRef = useRef();
   const videoRef = useRef();
